@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
-
+	
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net6.0</TargetFramework>
 		<ApplicationIcon>favicon.ico</ApplicationIcon>
 	</PropertyGroup>
 
-
 	<ItemGroup>
-		<ProjectReference Include="..\..\Photino.Blazor\Photino.Blazor.csproj" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
+		<PackageReference Include="Photino.Blazor" Version="2.1.7" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -18,9 +18,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="favicon.ico">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
+	  <None Update="favicon.ico">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 </Project>
